@@ -1,0 +1,14 @@
+{
+  "name": "events",
+  "repo": "javve/events",
+  "description": "Event binding component with support for single elements as well as NodeLists and Arrays",
+  "version": "0.0.1",
+  "keywords": ["event", "events", "array", "nodelist"],
+  "scripts": [
+    "index.js"
+  ],
+  "dependencies": {
+    "component/event": "*",
+    "timoxley/is-collection": "*"
+  }
+}
