@@ -4,7 +4,7 @@ var events = require('event'),
 /**
  * Bind `el` event `type` to `fn`.
  *
- * @param {Element} el
+ * @param {Element} el, NodeList, HTMLCollection or Array
  * @param {String} type
  * @param {Function} fn
  * @param {Boolean} capture
@@ -24,7 +24,7 @@ exports.bind = function(el, type, fn, capture){
 /**
  * Unbind `el` event `type`'s callback `fn`.
  *
- * @param {Element} el
+ * @param {Element} el, NodeList, HTMLCollection or Array
  * @param {String} type
  * @param {Function} fn
  * @param {Boolean} capture
