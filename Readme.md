@@ -5,6 +5,11 @@
 Element event binding component with support for single elements as well as NodeLists, HTMLCollections and Arrays.
 Based on [visionmedia](https://github.com/visionmedia)'s [component/event](https://github.com/component/event).
 
+## Component
+Built to be used with the [Component package manager](https://github.com/component/component). Read more here:
+* [Component at Github](https://github.com/component/component)
+* [TJ Holowaychuk's introduction](http://tjholowaychuk.com/post/27984551477/components)
+
 ## Installation
 
     $ component install javve/events
