@@ -2,13 +2,14 @@
   "name": "events",
   "repo": "javve/events",
   "description": "Event binding component with support for single elements as well as NodeLists, HTMLCollections and Arrays",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": ["event", "events", "array", "nodelist"],
   "scripts": [
     "index.js"
   ],
   "dependencies": {
     "component/event": "*",
-    "timoxley/is-collection": "*"
-  }
+    "javve/is-collection": "*"
+  },
+  "twitter": "@javve"
 }
