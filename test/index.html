@@ -14,9 +14,11 @@
       var a = document.getElementsByTagName('a');
 
       function onclick(e) {
-        e.preventDefault();
-        console.log(e.target);
-        events.unbind(e.target, 'click', onclick);
+        e.preventDefault ? e.preventDefault() : e.returnValue = false;
+        var target = e.target || e.srcElement;
+        alert(target);
+        events.unbind(target, 'click', onclick);
+        return false;
       }
 
       events.bind(a, 'click', onclick);
