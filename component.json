@@ -9,7 +9,7 @@
   ],
   "dependencies": {
     "component/event": "*",
-    "javve/is-collection": "*"
+    "javve/to-array": "*"
   },
   "twitter": "@javve"
 }

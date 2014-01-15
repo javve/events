@@ -1,5 +1,5 @@
 var events = require('event'),
-  isCollection = require('is-collection');
+  toArray = require('to-array');
 
 /**
  * Bind `el` event `type` to `fn`.
@@ -12,12 +12,9 @@ var events = require('event'),
  */
 
 exports.bind = function(el, type, fn, capture){
-  if (!isCollection(el)) {
-    events.bind(el, type, fn, capture);
-  } else if ( el && el[0] !== undefined ) {
-    for ( var i = 0; i < el.length; i++ ) {
-      events.bind(el[i], type, fn, capture);
-    }
+  el = toArray(el);
+  for ( var i = 0; i < el.length; i++ ) {
+    events.bind(el[i], type, fn, capture);
   }
 };
 
@@ -32,11 +29,8 @@ exports.bind = function(el, type, fn, capture){
  */
 
 exports.unbind = function(el, type, fn, capture){
-  if (!isCollection(el)) {
-    events.unbind(el, type, fn, capture);
-  } else if ( el && el[0] !== undefined ) {
-    for ( var i = 0; i < el.length; i++ ) {
-      events.unbind(el[i], type, fn, capture);
-    }
+  el = toArray(el);
+  for ( var i = 0; i < el.length; i++ ) {
+    events.unbind(el[i], type, fn, capture);
   }
 };
